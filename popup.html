@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    h3 {
+      margin-top: 0;
+      color: #333;
+        font-size: 22px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ffb300;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #666;
+      min-height: 20px; /* Чтобы не прыгало */
+    }
+    .footer {
+      margin-top: 15px;
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+    }
+    .footer a {
+      color: #007bff; /* Цвет ссылки */
+      text-decoration: none; /* Убираем подчеркивание */
+        font-size: 18px;
+    }
+    .footer a:hover {
+      text-decoration: underline; /* Добавляем подчеркивание при наведении */
+    }
+  </style>
+</head>
+<body>
+  <h3>YMP-Transfer</h3> <!-- Изменено название -->
+  <label for="playlistName">Название плейлиста:</label>
+  <input type="text" id="playlistName" placeholder="Например: MyPlaylist">
+  <button id="startBtn">Начать</button>
+  <div id="status">Готово.</div>
+  <div class="footer"> <!-- Новый блок с ссылками -->
+    <div><a href="https://t.me/Bober41" target="_blank">TG: Bober41</a></div>
+    <div><a href="https://github.com/eldevex/YMP-Transfer" target="_blank">Github: eldevex/YMP-Transfer</a></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
