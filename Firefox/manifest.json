@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "YMP-Transfer",
+  "version": "1.1",
+  "description": "Добавляет все треки с текущей страницы в указанный пользователем плейлист",
+  "permissions": [
+    "activeTab",
+    "tabs"   
+  ],
+  "browser_action": {   
+    "default_popup": "popup.html",
+    "default_title": "YMP-Transfer: Add Tracks to Custom Playlist"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+ 
+  "content_security_policy": "script-src 'self'; object-src 'self';"  
+}
